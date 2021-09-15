@@ -14,7 +14,7 @@
 - [How to write pseudocode](https://blog.usejournal.com/how-to-write-pseudocode-a-beginners-guide-29956242698)
 - [What's a program flowchart?](https://www.edrawsoft.com/flowchart/program-flowchart-definition.html)
 - [Flowchart in programming](https://www.programiz.com/article/flowchart-programming)
-- [Pseudocode and flowcharts (pdf)](http://www.yspuniversity.ac.in/cic/algorithm-manual.pdf)
+- [Pseudocode and flowcharts (pdf)](https://courses.minia.edu.eg/Attach/16036flowchart-algorithm-manual.pdf)
 
 
 ### C#
