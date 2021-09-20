@@ -1,0 +1,19 @@
+@import "base.css";
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Div                                                  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.test1 {
+    background-color: #f90;
+    width: 300px;
+    height: 100px;
+}
+
+.test2 {
+    background-color: #06f;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+}
