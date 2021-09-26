@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import "base.css";
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.img, .video, .audio, .youtube {
+  margin-top: 60px;
+  width: 600px;
+}
+
+figure, video, audio, iframe {
+  margin-top: 10px;
+  width: 100%;
+}
+
+img {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.space {
+  height: 120px;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+p a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #0075eb;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.article-img {
+  margin-top: 30px !important;
+}
+
+.date {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.article-p {
+  margin-top: 30px;
+}
