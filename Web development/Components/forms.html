@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-size: 18px;
+            font-family: "Nunito Sans", arial sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1080;
+            padding: 50px 0;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+  <body>
+    <div class="container">
+        <form id="form" method="POST" action="#">
+            <fieldset>
+                <legend>My form</legend>
+                <p>
+                    <label for="first-name">First name</label><br>
+                    <input type="text" id="first-name" placeholder="Your first name" required>
+                </p>
+                <p>
+                    <label for="last-name">Last name</label><br>
+                    <input type="text" id="last-name" placeholder="Your last name" required>
+                </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="my@email.com" required>
+                </p>
+                <p>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="phone" placeholder="(123) 456-7890" required>
+                </p>
+                <p>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" placeholder="Your password" required>
+                </p>
+                <p>
+                    <label for="message">Leave a message</label><br>
+                    <textarea id="message" placeholder="Your message" rows="6" required></textarea>
+                </p>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Additional information</legend>
+                <p>Choose your age</p>
+                <input type="radio" id="age1" value="0-15 years">
+                <label for="age1">0-15</label><br>
+
+                <input type="radio" id="age2" value="16-30 years">
+                <label for="age2">16-30</label><br>
+
+                <input type="radio" id="age3" value="31-45 years">
+                <label for="age3">0-15</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Which browsers do you use</legend>
+                <input type="checkbox" id="firefox" value="Mozilla Firefox">
+                <label for="firefox">Mozilla Firefox</label><br>
+                
+                <input type="checkbox" id="chrome" value="Google Firefox">
+                <label for="chrome">Google Chrome</label><br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Yes, we need more information</legend>
+                <p>Select your income</p>
+                <select id="income">
+                    <option value="1000">1000</option>
+                    <option value="2000">2000</option>
+                    <option value="3000">3000</option>
+                    <option value="4000">4000</option>
+                    <option value="5000">5000</option>
+                </select>
+            </fieldset>
+            <br>
+
+            <input type="reset" class="reset" value="Clear">
+            <input type="submit" class="submit" value="Send">
+            <input type="button" class="button" value="Button" onclick="alert('Hello world');">
+        </form>
+
+    </div>
+  </body>
+</html>

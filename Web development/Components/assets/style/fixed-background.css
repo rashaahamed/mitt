@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "base.css";
+
+
+/*  Components: fixed background                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+body {
+    background: #fff url("../img/desert.jpg") center center / cover no-repeat fixed;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Components: content                                  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
