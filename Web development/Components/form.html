@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form</title>
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style/form.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <h2>Registration form</h2>
+                <p>Fields with * are required</p>
+                <form method="POST" action="#" name="registration">
+                    <input type="text" name="first_name" placeholder="First name *" pattern="^[a-zA-Z]$" required>
+                    <input type="text" name="last_name" placeholder="Last name *" required>
+                    <input type="text" name="age" placeholder="Age *" required>
+                    <input type="email" name="email" placeholder="Email (abc@email.com) *"
+                      pattern="^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$" required>
+                    <input type="tel" name="phone" placeholder="Phone *" required>
+                    <input type="text" name="postal_code" placeholder="Postal code (A1B 2C3)*" required>
+                    <textarea name="message" placeholder="Message" maxlength="10" required></textarea>
+                    <div class="buttons">
+                        <input type="reset" value="Clear">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

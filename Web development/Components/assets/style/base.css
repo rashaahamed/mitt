@@ -8,8 +8,7 @@
     box-shadow: none;
     box-sizing: border-box;
     vertical-align: baseline;
-    -webkit-transition-duration: 0s;
-            transition-duration: 0s;
+    transition: all .25s ease-in-out;
 }
 
 p, a, li, label, input, textarea, div, span {
@@ -23,6 +22,6 @@ p, a, li, label, input, textarea, div, span {
 .container {
     position: relative;
     width: 90%;
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
 }
