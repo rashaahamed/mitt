@@ -1,0 +1,405 @@
+@import "base.css";
+
+
+body {
+    background-color: #fefaf6;
+	font-family: 'Inter', sans-serif;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Continue                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+.continue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid #000;
+	padding: 10rem;
+	border-radius: 20px;
+	margin-top: 10rem;
+	width: 100%;
+}
+
+
+.continue h3 {
+	font-size: 10px;
+	color: #000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.next-text {
+	font-size: 24px;
+    font-weight: 700;
+	color: #000;
+	padding-bottom: 2rem;
+	text-decoration: underline 2px;
+	text-transform: uppercase;
+}
+  
+.continue-left {
+	text-align: right;
+	width: 50%;
+	position: absolute;
+	padding: 0 2rem 0;
+}
+  
+.prev-text {
+	font-size: 12px;
+	line-height: 30px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	display: block;
+}
+  
+.continue-right {
+	width: 50%;
+	position: absolute;
+	padding: 0 2rem 0;
+}
+
+
+
+  /* font-size: 10px;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700; */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Banner                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.banner {
+	height: 800px;
+	width: 100%;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(230,233,148,1) 100%);
+	animation: fadeSlide .8s;
+}
+  
+@keyframes fadeSlide {
+	0% {transform: translateY(-100px); opacity:0;}
+	100% {transform: translateY(0); opacity:1;}
+}
+
+.banner h1 {
+    font-size: 46px;
+    font-weight: 700;
+	color: #000;
+	padding-bottom: 2rem;
+  }
+  
+.banner h2 {
+    margin-top: 4px;
+    font-size: 24px;
+    font-weight: 400;
+	color: var(--grey);
+	padding-bottom: .5rem;
+}
+
+.main-box {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section {
+    padding: 10rem 0 10rem 0;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Project Cards                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.my-work-display h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--grey);
+  padding-bottom: .5rem;
+}
+
+.my-work-display h1 {
+	font-size: 46px;
+	font-weight: 700;
+}
+
+.card-holder {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.card:last-child {
+	margin-bottom: 0;
+}
+
+.card-holder h3 {
+	font-size: 10px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.card-holder h1 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.card {
+    height: 600px;
+	/* width: 700px; */
+    /* clip-path: polygon(100% 0, 100% 100%, 25% 100%, 0 75%, 0 0); */
+    background-color: #383838;
+	margin-bottom: 5rem;
+}
+
+.card:hover {
+    transition: all 0.5s ease-in-out;
+	box-shadow: 0 20px 50px rgba(0,0,0,.20);
+	cursor: pointer;
+}
+
+.card-para {
+	padding: 15px 15px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	text-align: right;
+}
+
+.one {
+	background: #fff url("../img/ssl.svg") center center / cover no-repeat;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+.two {
+	background: #fff url("../img/drews.png") center center / cover no-repeat;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+.three {
+	background: #fff url("../img/pumpkin.png") center center / cover no-repeat;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+/* @media screen and (min-width: 1024px) {
+	.card {
+		flex: 0 50%;
+		max-width: 50%;
+	}
+} */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  CTA UI                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.fa-arrow-alt-circle-right {
+	margin-left: 10px;
+	font-size: 17px;
+	color: #000;
+
+	/* background: #000;
+    padding: 6px 7px 5px 6px;
+	border-radius: 50%; */
+}
+
+.fa-arrow-alt-circle-right:hover {
+	color: var(--grey);
+}
+
+span {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 2rem;
+  	font-size: 17px;
+  	color: #000;
+	letter-spacing: .5px;
+	text-decoration: underline 2px;
+	display: inline-block;
+	position: relative;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.lwtexte:hover span {
+	transform: translateX(4px);
+	color: var(--grey);
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Project Cards                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 
+@media screen and (min-width: 320px) {
+	nav { display: none; }
+	.mobile-nav { display: inline; }
+  }
+ 
+ @media screen and (min-width: 580px) {
+   nav { display: none; }
+   .mobile-nav { display: inline; }
+ }
+ 
+ @media screen and (min-width: 768px) {
+   nav { display: inline; }
+   .mobile-nav { display: none; }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+   nav { display: inline; }
+   .mobile-nav { display: none; }
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Me Container                                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.me-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.me-pic {
+	width: 50%;
+	height: 500px;
+	background: #fff url("../img/smile.jpg") center center / cover no-repeat;
+	margin-right: 2rem;
+	border-radius: 20px;
+	box-shadow: 0 52px 74px rgb(0 21 64 / 14%);
+}
+
+.am-para {
+	width: 50%;
+	margin: 0;
+	text-align: right;
+}
+
+.am-para h1 {
+    font-size: 46px;
+    font-weight: 500;
+	color: #000;
+	padding-bottom: 1rem;
+}
+
+.am-para p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+.favs {
+	padding: 10rem 0 0;
+	text-align: center;
+}
+
+.favs h1 {
+	font-weight: 500;
+	font-size: 46px;
+}
+
+.myfavs {
+	display: flex;
+}
+
+
+
+
+/** Music */
+
+.music-item {
+	padding-top: 5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.playlist {
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 0 52px 74px rgb(0 21 64 / 14%);
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 60%;
+}
+
+.music-para {
+	width: 40%;
+	text-align: left;
+}
+
+.music-para h3 {
+	font-size: 10px;
+	color: #000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.music-para h1 {
+	font-size: 24px;
+	color: #000;
+	font-weight: 300;
+}
+
+.music-para p {
+	padding: 2rem 2rem 0 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 2rem;
+}
